@@ -1,0 +1,382 @@
+/*Configuraciones generales*/
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    /*font-size: 62.5%; /* Reset para REMS - 62.5% = 10px de 16px*/   
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #FDFEFE;
+}
+
+
+/*Seccion taller*/
+
+.taller {
+    background-image: url(../img/epet_taller2.jpg); /* Tu imagen de fondo */
+    background-size: cover;
+    background-position: center center;
+    min-height: 50rem; /* Usamos min-height para que se adapte al contenido si crece */
+    /* display: flex;  Eliminamos esto porque lo manejaremos con clases de Bootstrap en el HTML */
+    position: relative; /* Necesario para que el overlay funcione si lo agregamos */
+}
+
+/* Opcional: Para mejorar la legibilidad del texto sobre la imagen de fondo */
+.taller::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Un overlay oscuro y semitransparente */
+    z-index: 1; /* Asegura que el overlay esté debajo del contenido */
+}
+
+.taller .container {
+    position: relative; /* Para que el contenido esté por encima del overlay */
+    z-index: 2;
+}
+
+
+/* seccion historia*/
+
+   .divider {
+        width: 80px;
+        height: 3px;
+        opacity: 0.7;
+    }
+    
+    .timeline {
+        position: relative;
+        padding-left: 30px;
+    }
+    
+    .timeline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 15px;
+        width: 2px;
+        background: rgba(13, 110, 253, 0.2);
+    }
+    
+    .timeline-bullet {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #0d6efd;
+        left: -30px;
+        top: 50%;
+    }
+    
+    .timeline-content {
+        position: relative;
+    }
+    
+    @media (min-width: 992px) {
+        .timeline {
+            padding-left: 0;
+        }
+        
+        .timeline::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .timeline-bullet {
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            margin-left: -15px;
+        }
+        
+        .timeline-content {
+            width: 45%;
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: auto;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-right: auto;
+        }
+    }
+    
+/*seccion radio*/
+
+
+/*pie de pagina*/
+
+footer a:hover {
+        color: #0d6efd !important;
+        transition: color 0.3s ease;
+    }
+    
+.bi {
+        vertical-align: middle;
+    }
+
+@media screen and (max-width: 691px) {
+    header nav ul li a {
+        display: flex;
+        color: white;
+        text-decoration: none;
+    }
+    header nav ul li a:hover {
+        background: #2980b9;
+        transition: all ease .5s;
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        -ms-transition: all ease .5s;
+        -o-transition: all ease .5s;
+    }
+    header nav ul li {
+        display: flex;
+        font-weight: bold;
+        float: right;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    .oferta-academica {
+        display: block;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    .taller {
+        background-image: url(../img/epet_taller2.jpg);
+        background-size: cover;
+        background-position: relative;
+        height: auto;
+        display: block;
+    }
+    .parrafo-taller {
+        font-size: 2.1rem;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    .boton {
+        color: #FFFFFF;
+        background-color: #E08709;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 1rem 3rem;
+        margin-top: 1%;
+        margin-bottom: 3%;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+    }
+    .historia {
+        background-color: #F86927;
+        height: 70rem;
+        display: flex;
+        align-items: center;
+    }
+    .centrado-historia h2 {
+        margin-top: 1%;
+        font-size: 3rem;
+        margin-bottom: 2%;
+    }
+    .radio-cinco {
+        display: block;
+        justify-content: space-between;
+        height: 25rem;
+    }
+    .centrar-radio h2 {
+        margin-bottom: 10px;
+        margin-top: 40px;
+        font-size: 30px;
+        width: 10em;
+        text-transform: uppercase;
+    }
+    .centrar-radio img {
+        box-shadow: 2px 2px 5px #000000;
+        width: 100%;
+        height: 30rem;
+    }
+    .radio {
+        height: 73rem;
+    }
+    footer {
+        background-color: #555B8D;
+    }
+    .barra-iconos {
+        width: 100%;
+        padding-top: 1rem;
+        height: 5rem;
+        background-color: #555B8D;
+        display: inline;
+    }
+    .red-social i {
+        color: #FFFFFF;
+        align-items: center;
+        margin-right: 10rem;
+    }
+    .derecho {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 5rem;
+        border-top: 1.5px solid #ccc;
+    }
+    .derecho p {
+        font-size: 1.4rem;
+        font-weight: 700;
+        padding: 0;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .oferta-academica {
+        display: inline-block;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    .historia {
+        background-color: #F86927;
+        height: 70rem;
+        display: flex;
+        align-items: center;
+    }
+    .centrado-historia h2 {
+        margin-top: 4%;
+        font-size: 3rem;
+        margin-bottom: 2%;
+    }
+    .boton {
+        color: #FFFFFF;
+        background-color: #E08709;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 1rem 3rem;
+        margin-top: 20%;
+        margin-bottom: 3%;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+    }
+    .taller {
+        background-image: url(../img/epet_taller2.jpg);
+        background-size: cover;
+        background-position: relative;
+        height: auto;
+        display: block;
+    }
+    .parrafo-taller {
+        font-size: 2.1rem;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .oferta-academica {
+        display: inline-block;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    .historia {
+        background-color: #F86927;
+        height: 50rem;
+        display: flex;
+        align-items: center;
+    }
+    .centrado-historia h2 {
+        margin-top: 4%;
+        font-size: 3rem;
+        margin-bottom: 2%;
+    }
+    .taller {
+        background-image: url(../img/epet_taller2.jpg);
+        background-size: cover;
+        background-position: relative;
+        height: auto;
+        display: block;
+    }
+    .parrafo-taller {
+        font-size: 2.1rem;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .oferta-academica {
+        display: inline-block;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    .historia {
+        background-color: #F86927;
+        height: 70rem;
+        display: flex;
+        align-items: center;
+    }
+    .centrado-historia h2 {
+        margin-top: 4%;
+        font-size: 3rem;
+        margin-bottom: 2%;
+    }
+    .boton {
+        color: #FFFFFF;
+        background-color: #E08709;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 1rem 3rem;
+        margin-top: 20%;
+        margin-bottom: 3%;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+    }
+    .taller {
+        background-image: url(../img/epet_taller2.jpg);
+        background-size: cover;
+        background-position: relative;
+        height: auto;
+        display: block;
+    }
+    .parrafo-taller {
+        font-size: 2.1rem;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+}
+
+/* Seccion Olimpicos */
+.imagen-fondo{
+    max-width: 50%;
+}
+
+.encabezado-olimpiada{
+    color: #2B3674 !important;
+    font-weight: 500 !important;
+}

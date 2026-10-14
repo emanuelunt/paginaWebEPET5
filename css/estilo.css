@@ -1,0 +1,167 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 2; /*espacio entre lineas o interlineado*/
+}
+
+html{
+    font-size:  62.5%; /* Reset Para REMS - 62.5% = 10px de 16px  */
+}
+/*  Estilos Generales*/ /* se utiliza para centrar el contenido*/
+.contenedor{
+    max-width: 120rem; /*establese que el ancho maximo tiene que ser 1200px*/
+    margin-left: auto; /* el tamañpo a la izquierda sea automatico*/
+    margin-right: auto; /*el tamañpo a la derecha sea automatico*/
+
+    /* margin: 0 auto 0 auto;  es igual que las dos lineas de arriba*/  
+}
+
+/* Utilidades*/
+
+.separador-secciones{
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+
+/*Header*/
+.encabezado{
+background-image: url("../imagenes/oficina2.jpg");  /* indicamos que la imagen va en el fondo*/
+background-position: center center;   /* define la posicion de la iagen en este caso se colaca en el centro y centraso*/
+background-size: cover;  /*especifica el tamaño de fondo de la imagen tomo todo el espacio disponible pero cuidadndo las propirciones*/
+/* height: 100vh;  esta propiedad calcula el 100% de la pantalla y colaca a ese tamaño*/
+min-height: 50rem;  /* altura minima*/
+overflow: hidden;   /*corta el contenido sin mostrar varra de desplazamiento*/
+}
+
+.logo{
+    width: 15rem; 
+    height: 6rem;
+}
+
+.contenido-encabezado{ /*alinear verticalmente*/
+    height: 100%; /* que el hijo ocupe el 100% del tamaño del padre*/
+    display: flex; /*habilito lex box para alinear*/
+    flex-direction: column; /* le digo a flex box en que direcion va alinear*/
+    justify-content: space-between; /*como va alinear*/
+}
+
+.contenido-encabezado h1{ /* le damos propiedades al h1 por medio de la clase*/
+    color: #FFFFFF; /* color*/
+    font-size: 2.5rem; /*tamaño*/
+    text-align: center; /*alineamos*/
+    padding-top: 12rem; /* padding desde arriba*/
+    line-height: 4rem;
+}
+
+.barra{
+    display: flex;  /* habilitamos el modo flexbox*/
+    justify-content: space-between; /* aliniamos horizontalemente el contenido opciones  flex-end | lex-start | space-around |space-between|space-evenly|*/
+    padding-top: 1.5rem; /*separa 30px del borde arriba hacia abajo*/
+    padding-bottom: 1rem;
+    align-items: center; /*no permite alinear los elemeto verticalmente*/
+ }
+
+ 
+.navegacion a{
+    color: #FFF;
+    text-decoration: none; /*remueve la linea u otra decaoracion del los enlace*/
+    padding-right: 1.5rem; /*margen a la derecha de los elementos*/
+    font-size: 1.8rem; /* tamaño de fuente*/
+}
+
+.navegacion a:hover{ /* pseudo selector todas las reglas se aplican cuando pasa el mouse por encima*/
+color: #FD4612;
+}
+.navegacion a:last-of-type{  /*pseudo selector que se aplica al ultimo elemento*/
+    margin: 0;
+}
+
+/*Seccion Nuetros Servicios*/
+.iconos-nuestrosServicios{ /* distribuimos  en tres columnas*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconos-nuestrosServicios img{ /* le damos a los iconos un tamaño*/
+    height: 50px;
+    width: 50px;
+    
+}
+.iconos{
+    flex-basis: calc(33.3%-1rem); /* del total de espacio disponible le asigna el 33% a cada uno menos 10px*/
+    text-align: center;
+}
+.iconos h3{ /*le damos estilo al h3*/
+    text-transform: uppercase; /*tranforma el texto en mayusculas*/
+    font-size: 18px;
+}
+.iconos p{ /* le damos estilo a los parrafos*/
+    font-size: 1.5rem;
+}
+
+.encabezado-servivios{ /*damos estilo al encabezado*/
+    text-align: center;
+    font-weight: 700; /*ancho de la fuente*/
+    font-size: 3rem;
+       
+}
+.encabezado-servivios::after{ /* pseudo-elementos*/
+    content: ''; /*indicamos que es lo que queremos que aparesca*/
+    display: block; /* tranforma o le decimos que es un elemento de bloque*/
+    width: 15rem; /* como elemeto de bloque le damos un ancho*/
+    height: 0.5rem; /* como elemento de bloque le damos un alto*/
+    background-color: red; /*  le damos un color de fondo*/
+    margin: auto; /*le damos que las margenes sean automatico de esta forma se centra*/
+}
+/*imagenes*/
+.contener-galery{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+.galery__img{
+    width: 400px;
+    height: 300px;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+
+.iconos h3{ /*le damos estilo al h3*/
+    text-transform: uppercase; /*tranforma el texto en mayusculas*/
+    font-size: 18px;
+}
+@media screen and (min-width: 450px){
+    .youtube{
+    width: 100%;
+}
+    .barra-iconos {
+        width: 100%;
+        padding-top: 1rem;
+        height: 5rem;
+        background-color: #555B8D;
+        display: inline;
+    }
+    .red-social i {
+        color: #FFFFFF;
+        align-items: center;
+        margin-right: 10rem;
+    }
+    .derecho {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 5rem;
+        border-top: 1.5px solid #ccc;
+    }
+    .derecho p {
+        font-size: 1.4rem;
+        font-weight: 700;
+        padding: 0;
+        color: white;
+    }
+}
+
+

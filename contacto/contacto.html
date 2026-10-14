@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto | EPET N&deg; 5 Santa Mar&iacute;a</title>
+    <meta name="description" content="Ponete en contacto con la EPET N&deg; 5 de Santa Mar&iacute;a, Catamarca. Envi&aacute; tu consulta institucional, acad&eacute;mica o de admisiones desde nuestro formulario.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contacto | EPET N&deg; 5 Santa Mar&iacute;a">
+    <meta property="og:description" content="Formulario oficial de contacto de la EPET N&deg; 5 de Santa Mar&iacute;a, Catamarca.">
+    <meta property="og:image" content="../img/epet52.jpg">
+    <meta property="og:image:alt" content="Frente de la EPET N&deg; 5 de Santa Mar&iacute;a">
+    <link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: "#0f172a",
+                        slateblue: "#1e3a8a",
+                        orange: "#f97316"
+                    },
+                    fontFamily: {
+                        display: ["Barlow", "sans-serif"],
+                        body: ["IBM Plex Sans", "sans-serif"]
+                    },
+                    boxShadow: {
+                        card: "0 20px 60px rgba(15, 23, 42, 0.14)"
+                    }
+                }
+            }
+        };
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "IBM Plex Sans", sans-serif;
+            background:
+                radial-gradient(circle at top left, rgba(30, 58, 138, 0.15), transparent 28%),
+                radial-gradient(circle at bottom right, rgba(249, 115, 22, 0.12), transparent 28%),
+                linear-gradient(180deg, #f8fafc 0%, #eff6ff 45%, #ffffff 100%);
+        }
+
+        .grid-pattern {
+            background-image:
+                linear-gradient(rgba(148, 163, 184, 0.10) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(148, 163, 184, 0.10) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: 1rem;
+            top: -4rem;
+            z-index: 100;
+            border-radius: 9999px;
+            background: #1e3a8a;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            font-weight: 600;
+            transition: top 0.2s ease;
+        }
+
+        .skip-link:focus {
+            top: 1rem;
+        }
+    </style>
+</head>
+<body class="text-slate-900">
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
+
+    <header class="relative overflow-hidden">
+        <div class="absolute inset-0 grid-pattern opacity-60"></div>
+        <nav aria-label="Navegaci&oacute;n principal" class="relative z-20 mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+            <a href="../index.html" class="flex items-center gap-3">
+                <img src="../img/logo2.png" alt="Logo EPET N&deg; 5" class="h-12 w-auto rounded-xl bg-white/80 p-1 shadow-lg">
+                <div>
+                    <p class="font-display text-xl font-800 uppercase tracking-wide text-ink">EPET N&deg; 5</p>
+                    <p class="text-sm font-medium text-slate-600">Santa Mar&iacute;a, Catamarca</p>
+                </div>
+            </a>
+
+            <button id="menu-toggle" type="button" class="inline-flex items-center rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm backdrop-blur lg:hidden">
+                Men&uacute;
+            </button>
+
+            <div class="hidden items-center gap-6 lg:flex">
+                <a href="../index.html" class="text-sm font-semibold text-slate-700 transition hover:text-orange">Inicio</a>
+                <a href="#formulario" class="text-sm font-semibold text-slate-700 transition hover:text-orange">Formulario</a>
+                <a href="#info" class="text-sm font-semibold text-slate-700 transition hover:text-orange">Informaci&oacute;n</a>
+                <a href="../construccion.html" class="text-sm font-semibold text-slate-700 transition hover:text-orange">Nuestra Escuela</a>
+                <a href="contacto.html" class="rounded-full bg-slateblue px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-950/20 transition hover:bg-orange">Contacto</a>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="relative z-20 mx-4 hidden rounded-3xl border border-white/70 bg-white/90 p-4 shadow-card backdrop-blur lg:hidden sm:mx-6">
+            <div class="flex flex-col gap-3">
+                <a href="../index.html" class="rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">Inicio</a>
+                <a href="#formulario" class="rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">Formulario</a>
+                <a href="#info" class="rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">Informaci&oacute;n</a>
+                <a href="../construccion.html" class="rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">Nuestra Escuela</a>
+                <a href="contacto.html" class="rounded-2xl bg-slateblue px-4 py-3 text-center text-sm font-semibold text-white transition hover:bg-orange">Contacto</a>
+            </div>
+        </div>
+
+        <section class="relative z-10 mx-auto max-w-7xl px-4 pb-14 pt-6 sm:px-6 lg:px-8 lg:pb-20">
+            <div class="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+                <div class="flex flex-col justify-center">
+                    <div class="inline-flex w-fit items-center gap-2 rounded-full border border-blue-200 bg-white/80 px-4 py-2 text-sm font-semibold text-slateblue shadow-sm backdrop-blur">
+                        Formulario institucional
+                    </div>
+                    <h1 class="mt-6 font-display text-5xl font-800 uppercase leading-none text-ink sm:text-6xl">
+                        Estamos para escucharte
+                    </h1>
+                    <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
+                        Si ten&eacute;s consultas sobre la escuela, admisiones, propuestas acad&eacute;micas o informaci&oacute;n general, pod&eacute;s escribirnos desde aqu&iacute; y te responderemos a la brevedad.
+                    </p>
+                    <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+                        <a href="#formulario" class="inline-flex items-center justify-center rounded-full bg-orange px-7 py-4 text-base font-semibold text-white shadow-lg shadow-orange-500/30 transition hover:-translate-y-0.5 hover:bg-orange-600">
+                            Completar formulario
+                        </a>
+                        <a href="#info" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white/90 px-7 py-4 text-base font-semibold text-slate-700 transition hover:border-slateblue hover:text-slateblue">
+                            Ver datos de contacto
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid gap-4">
+                    <article class="rounded-[2rem] border border-white/80 bg-white/85 p-7 shadow-card">
+                        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-orange">Canales</p>
+                        <h2 class="mt-4 font-display text-3xl font-800 uppercase text-ink">Consultas claras y directas</h2>
+                        <p class="mt-4 text-base leading-8 text-slate-600">
+                            El formulario nos ayuda a ordenar mejor cada mensaje para responder seg&uacute;n el tema: informaci&oacute;n general, admisiones o consultas acad&eacute;micas.
+                        </p>
+                    </article>
+                    <div class="grid gap-4 sm:grid-cols-2">
+                        <article class="rounded-[2rem] border border-white/80 bg-white/85 p-6 shadow-card">
+                            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-slateblue">Horario</p>
+                            <p class="mt-3 text-lg font-semibold text-ink">Lunes a Viernes</p>
+                            <p class="text-slate-600">8:00 a 18:00</p>
+                        </article>
+                        <article class="rounded-[2rem] border border-white/80 bg-white/85 p-6 shadow-card">
+                            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-slateblue">Ubicaci&oacute;n</p>
+                            <p class="mt-3 text-lg font-semibold text-ink">Santa Mar&iacute;a</p>
+                            <p class="text-slate-600">Catamarca</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main id="contenido-principal">
+        <section class="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
+            <div class="grid gap-8 lg:grid-cols-[1.08fr_0.92fr]">
+                <section id="formulario" class="rounded-[2rem] border border-blue-100 bg-white p-8 shadow-card sm:p-10">
+                    <div class="max-w-2xl">
+                        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-orange">Formulario</p>
+                        <h2 class="mt-4 font-display text-4xl font-800 uppercase text-ink">Envi&aacute; tu consulta</h2>
+                        <p class="mt-4 text-base leading-8 text-slate-600">
+                            Complet&aacute; los datos y contanos tu consulta. Intentaremos responderte lo antes posible.
+                        </p>
+                    </div>
+
+                    <div id="form-status" class="mt-6 hidden rounded-2xl px-4 py-3 text-sm font-semibold" role="status" aria-live="polite"></div>
+
+                    <form id="contactForm" action="contact_form.php" method="POST" novalidate class="mt-8 space-y-6">
+                        <div class="grid gap-6 md:grid-cols-2">
+                            <div>
+                                <label for="nombre" class="mb-2 block text-sm font-semibold text-slate-700">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" required class="w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3 text-base text-slate-900 outline-none transition focus:border-slateblue focus:bg-white focus:ring-4 focus:ring-blue-100">
+                                <p class="mt-2 hidden text-sm font-medium text-red-600" data-feedback-for="nombre">Por favor ingres&aacute; tu nombre.</p>
+                            </div>
+
+                            <div>
+                                <label for="email" class="mb-2 block text-sm font-semibold text-slate-700">Correo electr&oacute;nico</label>
+                                <input type="email" id="email" name="email" required class="w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3 text-base text-slate-900 outline-none transition focus:border-slateblue focus:bg-white focus:ring-4 focus:ring-blue-100">
+                                <p class="mt-2 hidden text-sm font-medium text-red-600" data-feedback-for="email">Por favor ingres&aacute; un correo electr&oacute;nico v&aacute;lido.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="telefono" class="mb-2 block text-sm font-semibold text-slate-700">Tel&eacute;fono (opcional)</label>
+                            <input type="tel" id="telefono" name="telefono" class="w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3 text-base text-slate-900 outline-none transition focus:border-slateblue focus:bg-white focus:ring-4 focus:ring-blue-100">
+                            <p class="mt-2 hidden text-sm font-medium text-red-600" data-feedback-for="telefono"></p>
+                        </div>
+
+                        <div>
+                            <label for="asunto" class="mb-2 block text-sm font-semibold text-slate-700">Asunto</label>
+                            <select id="asunto" name="asunto" required class="w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3 text-base text-slate-900 outline-none transition focus:border-slateblue focus:bg-white focus:ring-4 focus:ring-blue-100">
+                                <option value="" selected disabled>Seleccion&aacute; un asunto</option>
+                                <option value="informacion">Informaci&oacute;n general</option>
+                                <option value="admisiones">Admisiones</option>
+                                <option value="academico">Consultas acad&eacute;micas</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <p class="mt-2 hidden text-sm font-medium text-red-600" data-feedback-for="asunto">Por favor seleccion&aacute; un asunto.</p>
+                        </div>
+
+                        <div>
+                            <label for="mensaje" class="mb-2 block text-sm font-semibold text-slate-700">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="6" required class="w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3 text-base text-slate-900 outline-none transition focus:border-slateblue focus:bg-white focus:ring-4 focus:ring-blue-100"></textarea>
+                            <p class="mt-2 hidden text-sm font-medium text-red-600" data-feedback-for="mensaje">Por favor escrib&iacute; tu mensaje.</p>
+                        </div>
+
+                        <div class="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-4">
+                            <p class="mb-3 text-sm font-medium text-slate-600">Verificaci&oacute;n de seguridad</p>
+                            <div class="g-recaptcha" data-sitekey="6LfG5uEZAAAAAPdKSLpZ8mfSPOy1YF0S51Yf_et8"></div>
+                        </div>
+
+                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                            <p class="text-sm leading-7 text-slate-500">
+                                Al enviar el formulario, nos autoriz&aacute;s a usar estos datos solo para responder tu consulta.
+                            </p>
+                            <button id="submit-button" type="submit" class="inline-flex items-center justify-center rounded-full bg-slateblue px-7 py-4 text-base font-semibold text-white shadow-lg shadow-blue-950/20 transition hover:bg-orange disabled:cursor-not-allowed disabled:opacity-70">
+                                Enviar mensaje
+                            </button>
+                        </div>
+                    </form>
+                </section>
+
+                <aside id="info" class="grid gap-6">
+                    <section class="rounded-[2rem] border border-white/80 bg-slate-950 p-8 text-white shadow-card sm:p-10">
+                        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-orange-300">Informaci&oacute;n de contacto</p>
+                        <h2 class="mt-4 font-display text-3xl font-800 uppercase">Canales institucionales</h2>
+                        <div class="mt-8 space-y-6">
+                            <div>
+                                <p class="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">Direcci&oacute;n</p>
+                                <p class="mt-2 text-base leading-7 text-slate-200">Av. 9 de Julio N&deg; 390, Santa Mar&iacute;a, Catamarca</p>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">Correo</p>
+                                <p class="mt-2 text-base leading-7 text-slate-200">tecnica5.santamaria@catamarca.edu.ar</p>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">Tel&eacute;fono</p>
+                                <p class="mt-2 text-base leading-7 text-slate-200">+54 3838 420-989</p>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">Horario de atenci&oacute;n</p>
+                                <p class="mt-2 text-base leading-7 text-slate-200">Lunes a Viernes, de 8:00 a 18:00</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="rounded-[2rem] border border-blue-100 bg-white p-8 shadow-card">
+                        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-slateblue">Redes y comunidad</p>
+                        <h2 class="mt-4 font-display text-3xl font-800 uppercase text-ink">Seguinos y mantenete informado</h2>
+                        <p class="mt-4 text-base leading-8 text-slate-600">
+                            Tambi&eacute;n pod&eacute;s encontrarnos en nuestros canales institucionales para seguir novedades, actividades y anuncios.
+                        </p>
+                        <div class="mt-6 flex flex-wrap gap-3">
+                            <a href="https://www.facebook.com/la.cinco.santa.maria" class="rounded-full border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slateblue hover:text-slateblue">Facebook</a>
+                            <a href="../index.html" class="rounded-full border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slateblue hover:text-slateblue">Volver al inicio</a>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-slate-950 text-slate-200">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.2fr_1fr_0.9fr] lg:px-8">
+            <div>
+                <div class="flex items-center gap-3">
+                    <img src="../img/logo2.png" alt="Logo EPET N&deg; 5" class="h-12 w-auto rounded-xl bg-white/90 p-1">
+                    <div>
+                        <p class="font-display text-xl font-800 uppercase text-white">EPET N&deg; 5</p>
+                        <p class="text-sm text-slate-400">Santa Mar&iacute;a, Catamarca</p>
+                    </div>
+                </div>
+                <p class="mt-5 max-w-md text-sm leading-7 text-slate-400">
+                    Una instituci&oacute;n de educaci&oacute;n t&eacute;cnica comprometida con la formaci&oacute;n, la comunidad y el futuro de sus estudiantes.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="font-display text-lg font-800 uppercase text-white">Contacto</h2>
+                <ul class="mt-5 space-y-3 text-sm leading-7 text-slate-400">
+                    <li>Av. 9 de Julio N&deg; 390, Santa Mar&iacute;a, Catamarca</li>
+                    <li>tecnica5.santamaria@catamarca.edu.ar</li>
+                    <li>+54 3838 420-989</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="font-display text-lg font-800 uppercase text-white">Accesos</h2>
+                <div class="mt-5 flex flex-col gap-3 text-sm font-semibold">
+                    <a href="../index.html" class="text-slate-300 transition hover:text-orange">Volver al inicio</a>
+                    <a href="../construccion.html" class="text-slate-300 transition hover:text-orange">Nuestra escuela</a>
+                    <a href="../modalidades_info.html" class="text-slate-300 transition hover:text-orange">Oferta acad&eacute;mica</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/validacionFormulario.js"></script>
+</body>
+</html>

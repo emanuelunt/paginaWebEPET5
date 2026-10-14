@@ -1,0 +1,80 @@
+
+body {
+            font-family: 'Roboto', sans-serif;
+            padding-top: 56px;
+        }
+        
+.navbar {
+            background-color: #FFF;
+        }
+
+.hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/info-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 40px;
+        }
+        
+.modalidad-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            margin-bottom: 30px;
+        }
+        
+.modalidad-card:hover {
+            transform: translateY(-10px);
+        }
+        
+.borde-icono {
+            max-width: 100px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+        
+.galeria-img {
+            border-radius: 8px;
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+        
+.galeria-img:hover {
+            transform: scale(1.03);
+        }
+        
+.youtube-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 40px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+.youtube-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+      /*  footer {
+            background-color: #343a40;
+            color: white;
+        }*/
+        
+.social-icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: white;
+            transition: color 0.3s;
+        }
+        
+.social-icon:hover {
+            color: #ffc107 !important;
+        }

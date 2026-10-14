@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página en Construcción | E.P.E.T. N°5</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .construction-container {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .construction-icon {
+            font-size: 5rem;
+            color: #ffc107;
+            margin-bottom: 2rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .btn-return {
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-return:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress {
+            height: 8px;
+            margin: 2rem auto;
+            max-width: 400px;
+        }
+
+        .progress-bar {
+            background-color: #ffc107;
+            animation: progress-animation 3s infinite;
+        }
+
+        @keyframes progress-animation {
+            0% {
+                width: 0%;
+            }
+
+            50% {
+                width: 100%;
+            }
+
+            100% {
+                width: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container construction-container">
+        <!-- Icono animado -->
+        <div class="construction-icon">
+            <i class="bi bi-tools"></i>
+        </div>
+
+        <!-- Mensaje principal -->
+        <h1 class="display-4 fw-bold mb-3 text-warning">¡Estamos trabajando en esto!</h1>
+
+        <p class="lead mb-4 text-muted">Esta sección de nuestro sitio web está actualmente en construcción.</p>
+
+        <!-- Barra de progreso animada -->
+        <div class="progress w-75">
+            <div class="progress-bar progress-bar-striped progress-bar-animated"></div>
+        </div>
+
+        <!-- Información adicional -->
+        <div class="card border-0 shadow-sm mt-4 mb-4" style="max-width: 500px;">
+            <div class="card-body">
+                <p class="mb-2"><i class="bi bi-info-circle-fill text-primary me-2"></i>Estamos mejorando nuestro sitio
+                    web para ofrecerte una mejor experiencia.</p>
+                <p class="mb-0"><i class="bi bi-clock-fill text-primary me-2"></i>Vuelve a visitarnos pronto para ver
+                    las novedades.</p>
+            </div>
+        </div>
+
+        <!-- Botón de retorno -->
+        <a href="index.html" class="btn btn-warning btn-lg btn-return px-4 mt-3">
+            <i class="bi bi-arrow-left-circle me-2"></i>Volver al inicio
+        </a>
+
+        <!-- Contacto de emergencia -->
+        <div class="mt-5 text-center small">
+            <p class="text-muted">¿Necesitas información urgente sobre esta sección?</p>
+            <a href="mailto:epet5@yahoo.com.ar" class="text-decoration-none">
+                <i class="bi bi-envelope me-1"></i>Contáctanos
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer simple -->
+    <footer class="fixed-bottom bg-white py-3 small text-center text-muted">
+        <div class="container">
+            <p class="mb-0">E.P.E.T. N°5 - Santa María, Catamarca | © <span id="current-year">2024</span></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Año actual -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

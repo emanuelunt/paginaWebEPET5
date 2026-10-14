@@ -1,0 +1,757 @@
+/*Configuraciones generales*/
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%/* Reset para REMS - 62.5% = 10px de 16px*/
+    ;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #FDFEFE;
+}
+
+
+/*formulario*/
+
+.fondo-formulario {
+    background-color: #c9c9c9;
+}
+
+
+/*Utilidad*/
+
+
+/*centra el contenido*/
+
+.contenedor {
+    width: 90%;
+    max-width: 100rem;
+    margin: auto;
+}
+
+.separador-secciones {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.alinear-izquierda {
+    text-align: left;
+}
+
+
+/* Header*/
+
+.red-social {
+    color: white;
+}
+
+.logo img {
+    width: 7rem;
+    height: 8.5rem;
+    float: left;
+}
+
+
+/* distribulle el menu de arriba*/
+
+
+/*menuxd*/
+
+
+/**/
+
+header ul li img {
+    width: 1600px;
+    height: 60vh;
+    /*height: 50vh;*/
+}
+
+.img1 img {
+    width: 1600px;
+    height: 60vh;
+}
+
+.img2 img {
+    width: 1600px;
+    height: 60vh;
+}
+
+.img3 img {
+    width: 1600px;
+    height: 60vh;
+}
+
+.img4 img {
+    margin: auto;
+    background-position: center center;
+    width: 1600px;
+    height: 60vh;
+}
+
+
+/*imagen movimiento header*/
+
+.content {
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
+    overflow: hidden;
+}
+
+.content ul {
+    list-style: none;
+    width: 2100px;
+    display: flex;
+    animation: slide 20s infinite alternate;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0px;
+    }
+    20% {
+        margin-left: 0px;
+    }
+    25% {
+        margin-left: -800px;
+    }
+    45% {
+        margin-left: -800px;
+    }
+    50% {
+        margin-left: -1600px
+    }
+    70% {
+        margin-left: -1600px;
+    }
+    75% {
+        margin-left: -2400px;
+    }
+    100% {
+        margin-left: -2400px;
+    }
+}
+
+
+/*imagen movimiento header fin*/
+
+.contenedor_dos {
+    width: 100%;
+    margin: auto;
+    /*max-width: 1000px;*/
+}
+
+
+/*.logo img {
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+    margin-bottom: -55px;
+}*/
+
+header nav {
+    background-color: #F86927;
+    width: 100%;
+    top: 0.5px;
+    position: absolute;
+    margin: auto;
+    margin-bottom: 20px;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
+
+header nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+header nav ul li {
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background: #2980b9;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
+
+.menu-fixed {
+    background-color: #2B3674;
+    /*background-color: rgba(0, 0, 0, .5);*/
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*max-width: 1000px;*/
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
+}
+
+.menu-fixed ul li a {
+    padding: 20px 20px;
+}
+
+
+/*menuxd*/
+
+.header-contrucion {
+    background-color: #6093C2;
+    /*height: 50vh;*/
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    min-height: 75rem;
+}
+
+.barra-contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra-iconos {
+    width: 100%;
+    padding-top: 1rem;
+    height: 3rem;
+    background-color: #555B8D;
+}
+
+.red-social i {
+    color: #FFFFFF;
+    align-items: center;
+    display: inline-block;
+    margin-right: 0.7rem;
+}
+
+.red-social i:hover {
+    color: #F86927;
+}
+
+.telefo-contacto ul li {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 0.7rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    margin-right: 5rem;
+}
+
+.telefo-contacto ul li i {
+    margin-right: 1rem;
+}
+
+
+/*Seccion Novedades Inscripciones  */
+
+.novedades {
+    background-color: #EDEDEF;
+}
+
+.contenedor h2 {
+    padding-top: 3rem;
+    font-size: 4rem;
+    text-align: center;
+    color: #2B3674;
+    text-decoration: #2B3674;
+}
+
+.parrafo-noticias {
+    padding-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.requisitos-presentar {
+    font-weight: bold;
+    color: #2B3674;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.requisitos-noticias {
+    font-weight: bold;
+    color: #2B3674;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.coe-noticias {
+    font-weight: bold;
+    color: #2B3674;
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* principam main*/
+
+.contenedor_formularios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    text-align: center;
+}
+
+.contenedor_formularios h2 {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 500px;
+    text-align: center;
+    align-items: center;
+}
+
+.contenedor_formularios p {
+    font-size: 1rem;
+    color: aqua;
+    text-align: center;
+    margin: auto;
+}
+
+.encabezado_registros {
+    font-size: 4rem;
+    text-align: center;
+    color: #2B3674;
+    text-transform: uppercase;
+}
+
+.registro_formularios {
+    width: calc(23.3333333%-2rem);
+    text-align: center center;
+}
+
+.modalidad img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.modalidad h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+.info_icono:hover {
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+    transition: all ease .5s;
+    -moz-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    -o-transform: scale(1.6);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
+
+.info_icono {
+    overflow: hidden;
+}
+
+.electro_icono:hover {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: all ease .5s;
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
+
+.maestro_m_icono:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: all ease .5s;
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
+
+.modalidad a {
+    text-decoration: none;
+}
+
+.parrafo-modalidad {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/*Seccion taller*/
+
+.taller {
+    background-image: url(../img/epet_taller2.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 50rem;
+    display: flex;
+}
+
+.parrafo-taller {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.taller h2 {
+    margin-top: -60px;
+    color: white;
+    text-align: left;
+}
+
+.taller p {
+    line-height: 35px;
+    margin-top: 30px;
+    color: white;
+    text-align: left;
+}
+
+.boton {
+    color: #FFFFFF;
+    background-color: #E08709;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+}
+
+.boton:hover {
+    background: teal;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
+
+
+/* seccion historia*/
+
+.historia {
+    background-color: #F86927;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.centrado-historia {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.centrado-historia .boton {
+    margin-top: 80px;
+}
+
+.centrado-historia h2 {
+    margin-top: -3rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.centrado-historia p {
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 2rem;
+    max-width: 110rem;
+    margin: auto;
+}
+
+.encabezado-historia {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*seccion radio*/
+
+.radio {
+    height: 40rem;
+}
+
+.radio-cinco {
+    display: flex;
+    justify-content: space-between;
+}
+
+.centrar-radio {
+    margin-right: 20px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.centrar-radio img {
+    box-shadow: 2px 2px 5px #000000;
+    width: 100%;
+    height: 30rem;
+}
+
+.centrar-radio h2 {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.parrafo-radio {
+    padding-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.centrar-radio a {
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.centrar-radio a:hover {
+    background-color: teal;
+}
+
+
+/*pie de pagina*/
+
+footer {
+    background-color: #555B8D;
+}
+
+.derecho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    border-top: 1.5px solid #ccc;
+}
+
+.derecho p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0;
+    color: white;
+}
+
+@media screen and (max-width: 691px) {
+    .oferta-academica {
+        display: block;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    .taller {
+        background-image: url(../img/epet_taller2.jpg);
+        background-size: cover;
+        background-position: relative;
+        height: auto;
+        display: block;
+    }
+    .parrafo-taller {
+        font-size: 2.1rem;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    .boton {
+        color: #FFFFFF;
+        background-color: #E08709;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 1rem 3rem;
+        margin-top: 1%;
+        margin-bottom: 3%;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+    }
+    .historia {
+        background-color: #F86927;
+        height: 70rem;
+        display: flex;
+        align-items: center;
+    }
+    .centrado-historia h2 {
+        margin-top: 1%;
+        font-size: 3rem;
+        margin-bottom: 2%;
+    }
+    .radio-cinco {
+        display: block;
+        justify-content: space-between;
+        height: 25rem;
+    }
+    .centrar-radio h2 {
+        margin-bottom: 10px;
+        margin-top: 40px;
+        font-size: 30px;
+        width: 10em;
+        text-transform: uppercase;
+    }
+    .centrar-radio img {
+        box-shadow: 2px 2px 5px #000000;
+        width: 100%;
+        height: 30rem;
+    }
+    .radio {
+        height: 73rem;
+    }
+    footer {
+        background-color: #555B8D;
+    }
+    .barra-iconos {
+        width: 100%;
+        padding-top: 1rem;
+        height: 5rem;
+        background-color: #555B8D;
+        display: inline;
+    }
+    .red-social i {
+        color: #FFFFFF;
+        align-items: center;
+        margin-right: 10rem;
+    }
+    .derecho {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 5rem;
+        border-top: 1.5px solid #ccc;
+    }
+    .derecho p {
+        font-size: 1.4rem;
+        font-weight: 700;
+        padding: 0;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .oferta-academica {
+        display: inline-block;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    historia {
+        background-color: #F86927;
+        height: 70rem;
+        display: flex;
+        align-items: center;
+    }
+    .centrado-historia h2 {
+        margin-top: 4%;
+        font-size: 3rem;
+        margin-bottom: 2%;
+    }
+    .boton {
+        color: #FFFFFF;
+        background-color: #E08709;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 1rem 3rem;
+        margin-top: 20%;
+        margin-bottom: 3%;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+    }
+    .taller {
+        background-image: url(../img/epet_taller2.jpg);
+        background-size: cover;
+        background-position: relative;
+        height: auto;
+        display: block;
+    }
+    .parrafo-taller {
+        font-size: 2.1rem;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .oferta-academica {
+        display: inline-block;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    historia {
+        background-color: #F86927;
+        height: 90rem;
+        display: flex;
+        align-items: center;
+    }
+    .centrado-historia h2 {
+        margin-top: 4%;
+        font-size: 3rem;
+        margin-bottom: 2%;
+    }
+    .taller {
+        background-image: url(../img/epet_taller2.jpg);
+        background-size: cover;
+        background-position: relative;
+        height: auto;
+        display: block;
+    }
+    .parrafo-taller {
+        font-size: 2.1rem;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+}

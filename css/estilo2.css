@@ -1,0 +1,135 @@
+/*Configuraciones generales*/
+html{
+    font-size: 62.5% /* Reset para REMS - 62.5% = 10px de 16px*/;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+      font-family:  'Roboto';
+      background-color: #FDFEFE ;
+  }
+
+/*Utilidad*/
+
+/*centra el contenido*/
+.contenedor{
+
+    width: 90%;
+    max-width: 100rem;
+    margin: auto;
+
+  }
+ .separador-secciones{
+     margin-top: 0.5rem;
+     margin-bottom: 0.5rem;
+ }
+ .centrar-texto{
+     text-align: center;
+ }
+
+/* Header*/
+
+.red-social{
+    color: white;
+}
+
+.logo img{
+      width: 7rem;
+      height: 8.5rem;
+  }
+
+  
+/* distribulle el menu de arriba*/
+header{
+   
+    height: 12rem;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    min-height: 5rem;
+}
+
+.header-contrucion{
+
+    background-color:#6093C2;
+    /*height: 50vh;*/
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    min-height: 75rem;
+}
+
+
+
+.barra-menu{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.5rem;
+  }
+
+.menu-arriba a{
+text-decoration: none;
+font-size: 1.8rem;
+margin: 1rem;
+color: #555B8Ds;
+font-weight: 700;
+border-bottom: 2px solid transparent  ;
+display: inline-block;
+
+transition: all 0.5s ease;
+}
+
+.menu-arriba a:hover{
+      
+    color: #F86927;
+    border-bottom: 2px solid #F86927  ;
+    
+}
+
+.barra-contacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.barra-iconos{
+     width: 100%;
+     height: 3rem;
+     background-color: #555B8D;
+     
+ }
+
+ .red-social i{
+     color: #FFFFFF;
+     align-items: center;
+     display: inline-block;
+     margin-right: 0.7rem;
+}
+.red-social i:hover{
+     color: #F86927;
+ }
+ .telefo-contacto ul li{
+   display: inline-block;
+   text-decoration: none;
+   color: #FFFFFF;
+   margin-right: 0.7rem;
+   font-size: 1.2rem;
+   font-family: 'Roboto';
+   margin-right: 5rem;
+ }
+ 
+ .telefo-contacto ul li i{
+     margin-right: 1rem;
+ }
+
+ 
+ /* principam main*/
+ .contenedor.centrar-texto{
+     text-transform: uppercase;
+     color: #F86927;
+     font-weight: 700;
+     font-size: 5rem;
+ }

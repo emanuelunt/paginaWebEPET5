@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%/* Reset para REMS - 62.5% = 10px de 16px*/
+    ;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #FDFEFE;
+}
+
+.formulario-titulo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fondo-formulario {
+    background-color: #c9c9c9;
+    height: 100vh;
+}

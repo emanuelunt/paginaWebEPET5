@@ -1,0 +1,80 @@
+
+
+/*@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('./fonts/dig-regular.woff') format('WOFF'); 
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  } */
+  
+  .background{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   /* background-image: url(./img/Desktop_00001.jpg);*/
+   /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);*/
+    background-position-y: -20rem;
+  }
+  
+  
+    .timer-container{
+      position: relative;
+     /* background-color: hsla(0,100%,0%,.55);*/
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 13rem;
+    }
+  
+    .timer-container-title{
+      position: absolute;
+      top: -.5rem;
+      font-family: 'Poppins', sans-serif;
+      /*color: hsla(0, 0%, 80%, 1);*/
+      font-size: 3rem;
+      color: #2B3674 !important;
+      font-weight: 500 !important;
+    }
+  
+    .timer-item{
+      display: inline-flex;
+      position: relative;
+      min-width: 4rem;
+      /*color: hsla(0, 0%, 80%, 1);*/
+      color: #2B3674;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 4rem;
+      font-family: 'Poppins', sans-serif;
+      top: 1.5rem;
+    }
+  
+    
+    .timer-number{
+      border-bottom: .5px solid hsla(0, 0%, 80%, .8);
+      padding-bottom: 1.5rem;
+      width: 100%;
+      transform: scaleY(1.5);
+    }
+  
+    .timer-item::after{
+      font-size: 2rem;
+      position: absolute;
+      bottom: -.6rem;
+    }
+    .timer-item:nth-child(1)::after{
+      content: 'Dias';
+    }
+    .timer-item:nth-child(2)::after{
+      content: 'Horas';
+    }
+    .timer-item:nth-child(3)::after{
+      content: 'Minutos';
+    }
+    .timer-item:nth-child(4)::after{
+      content: 'Segundos';
+    }
+  
